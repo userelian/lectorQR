@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WiFi QR Scanner</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>📶 WiFi QR Scanner</h1>
+
+<button id="cameraBtn">Abrir cámara</button>
+
+<label class="upload">
+Seleccionar imagen
+<input type="file" id="fileInput" accept="image/*" hidden>
+</label>
+
+<div id="reader"></div>
+
+<canvas id="canvas" hidden></canvas>
+
+<div id="result">
+
+<p>Esperando un QR...</p>
+
+</div>
+
+</div>
+
+<script src="https://unpkg.com/jsqr/dist/jsQR.js"></script>
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
